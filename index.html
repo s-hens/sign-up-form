@@ -22,29 +22,38 @@
         <form action="example.com/path" method="post">
 
             <fieldset>
-                <legend>About You</legend>
-                <label for="firstname">First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <legend>Name</legend>
+                <div class="form-block">
+                    <label for="firstname">First</label>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <div class="form-block">
+                    <label for="lastname">Last</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+            </fieldset>
 
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname">
-
-                <fieldset>
-                    <legend>Magic Type</legend>
+            <fieldset>
+                <legend>Magic Type</legend>
+                <div class="form-radio">
                     <input type="radio" id="good" name="magictype" value="good">
                     <label for="good">Good</label>
+
                     <input type="radio" id="evil" name="magictype" value="evil">
                     <label for="evil">Evil</label>
-                </fieldset>
+                </div>
             </fieldset>
 
             <fieldset>
                 <legend>Account Information</legend>
-                <label for="email">Email</label>
+                <div class="form-block">
+                    <label for="email">Email</label>
                 <input type="email" id="email" name="email">
-
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
+                </div>
+                <div class="form-block">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
             </fieldset>
 
             <button type="submit">Submit</button>

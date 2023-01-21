@@ -9,16 +9,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    color: rgb(255, 255, 255);
-    background: rgb(29, 29, 29);
+    color: rgb(230, 230, 230);
+    background: rgb(30,30,30);
+    background: linear-gradient(0deg, rgba(30, 30, 30, 1) 0%, rgba(40, 40, 40, 1) 100%);
 }
 
-/*
-div {
-    border: 1px solid red;
-    box-sizing: border-box;
-}
-*/
+/* Left side */
 
 .left {
     position: relative;
@@ -59,16 +55,54 @@ div {
     color: rgb(180, 180, 180);
 }
 
+/* Right side */
+
 .right {
     flex: 2 1 auto;
     max-width: 70vw;
     padding: 25px;
     font-family: 'Lucida Sans', sans-serif;
     font-size: 20px;
-    color: rgb(220, 220, 220);
 }
 
 p {
     margin: 0;
     padding: 0 0 10px;
+}
+
+/* Form */
+
+fieldset {
+    display: flex;
+    width: fit-content;
+    margin: 0 0 25px;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.form-block label {
+    display: block;
+}
+
+.form-block input {
+    width: 200px;
+    height: initial;
+  }
+
+.form-radio {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.form-radio label {
+    width: 190px;
+}
+
+.form-radio input {
+    margin-right: 10px;
 }
