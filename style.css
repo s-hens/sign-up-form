@@ -145,11 +145,19 @@ legend {
     background-color: rgb(191, 212, 188);
 }
 
+.form-block input:invalid {
+    border: 2px dotted rgb(192, 57, 43);
+}
+
 .form-detail {
     width: 200px;
     font-size: 14px;
     line-height: 16px;
     padding: 10px 0 0 0;
+}
+
+.form-block input:invalid + .form-detail {
+    color: rgb(192, 57, 43);
 }
 
 .form-radio, .form-check {
@@ -191,7 +199,7 @@ legend {
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
-.form-check input:checked + label {
+.form-radio input:checked + label, .form-check input:checked + label {
     color: rgb(191, 212, 188);
 }
 
