@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'AveriaSerifRegular';
     color: rgb(230, 230, 230);
     background: rgb(30, 30, 30);
     background: linear-gradient(0deg, rgba(30, 30, 30, 1) 0%, rgba(40, 40, 40, 1) 100%);
@@ -59,22 +59,33 @@ a {
 
 .right {
     flex: 2 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
     max-width: 70vw;
     padding: 25px 35px;
     font-size: 18px;
     line-height: 20px;
 }
 
+.right-content {
+    margin: auto 0;  
+}
+
 .toptext {
     margin: 0;
     padding: 0 0 25px;
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 26px;
 }
 
 p {
     margin: 0;
     padding: 0 0 25px;
+}
+
+p a {
+    color: rgb(126, 170, 121);
 }
 
 /* Form */
@@ -106,7 +117,14 @@ fieldset {
 .form-block input {
     width: 200px;
     height: initial;
-  }
+}
+
+.form-detail {
+    width: 200px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 0 0 0;
+}
 
 .form-radio, .form-check {
     display: flex;
@@ -127,13 +145,22 @@ fieldset {
 }
 
 button {
-    background: rgb(85,119,96);
+    background: rgb(85, 119, 96);
     background: linear-gradient(0deg, rgba(85, 119, 96, 1) 0%, rgba(126, 170, 121, 1) 100%);
     border: none;
     border-radius: 10px;
     font-size: 18px;
     line-height: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(230, 230, 230);
+    font-family: 'AveriaSerifRegular';
+    color: rgb(30, 30, 30);
     padding: 10px 50px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+}
+
+button:active {
+    transform: translateY(2px);
 }

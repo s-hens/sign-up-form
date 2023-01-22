@@ -7,6 +7,7 @@
     <title>FAMILIARS | Sign up today!</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./javascript.js" defer></script>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/averia-serif" type="text/css"/>
 </head>
 <body>
     
@@ -16,8 +17,9 @@
     </div>
 
     <div class="right">
-        <p class="toptext">Are you a witch in need of a feline companion?<br>Is isolation in your tower, lair, or hut driving you mad?</p>
-        <p class="toptext">Sign up <em>now</em> to meet your familiar <em>today</em>!</p>
+        <div class="right-content">
+            <p class="toptext">Are you a witch in need of a feline companion?<br>Is isolation in your tower, lair, or hut driving you mad?</p>
+        <p class="toptext">Sign up <em>now</em> to meet your familiar <em>today!</em></p>
 
         <form action="example.com/path" method="post">
             <fieldset>
@@ -50,6 +52,9 @@
                 <div class="form-block">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password">
+                    <div class="form-detail">
+                        Password must be at least 6 characters long and include at least 1 eldritch incantation.
+                    </div>
                 </div>
             </fieldset>
             <fieldset>
@@ -62,6 +67,7 @@
         </form>
 
         <p>Already have an account? <a href="http://google.com">Log In!</a></p>
+        </div>
     </div>
     
 </body>
