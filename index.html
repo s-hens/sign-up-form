@@ -16,11 +16,10 @@
     </div>
 
     <div class="right">
-        <p>Are you a witch in need of a feline companion? Is isolation in your tower, lair, or hut driving you mad?</p>
-        <p>Sign up <em>now</em> to meet your familiar <em>today</em>!</p>
+        <p class="toptext">Are you a witch in need of a feline companion?<br>Is isolation in your tower, lair, or hut driving you mad?</p>
+        <p class="toptext">Sign up <em>now</em> to meet your familiar <em>today</em>!</p>
 
         <form action="example.com/path" method="post">
-
             <fieldset>
                 <legend>Name</legend>
                 <div class="form-block">
@@ -32,7 +31,6 @@
                     <input type="text" id="lastname" name="lastname">
                 </div>
             </fieldset>
-
             <fieldset>
                 <legend>Magic Type</legend>
                 <div class="form-radio">
@@ -43,7 +41,6 @@
                     <label for="evil">Evil</label>
                 </div>
             </fieldset>
-
             <fieldset>
                 <legend>Account Information</legend>
                 <div class="form-block">
@@ -55,10 +52,16 @@
                     <input type="password" id="password" name="password">
                 </div>
             </fieldset>
-
+            <fieldset>
+                <div class="form-check">
+                    <input type="checkbox" id="visions" name="visions">
+                    <label for="visions">I would like to receive occasional prophetic visions about new products</label>
+                </div>
+            </fieldset>
             <button type="submit">Submit</button>
-
         </form>
+
+        <p>Already have an account? <a href="http://google.com">Log In!</a></p>
     </div>
     
 </body>
