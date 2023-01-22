@@ -4,7 +4,7 @@
 
 ## Summary
 
-This is a fake sign-up form that validates user input. Done as part of [The Odin Project](https://www.theodinproject.com/) foundations curriculum.
+This is a fake sign-up form that validates user input. Done as part of [The Odin Project](https://www.theodinproject.com/) curriculum.
 
 ## I learned about...
 
